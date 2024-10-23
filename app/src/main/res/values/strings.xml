@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PrivioBrowser</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="renderEffect_createBlurEffect_color">#65868383</string>
+</resources>

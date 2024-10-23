@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_saved_page_bg_colors">
+        <item>#DFC6D1</item>
+        <item>#A67C9F</item>
+        <item>#C19FAD</item>
+        <item>#FFE4E1</item>
+        <item>#F7CAC9</item>
+        <item>#E6B8A2</item>
+        <item>#D1A3A4</item>
+        <item>#F5D6D7</item>
+        <item>#F2E5E6</item>
+        <item>#C9B2BA</item>
+    </string-array>
+
+    <string-array name="array_trending_searches_bg_colors">
+        <item>#FF4081</item> <!-- Pink A200 -->
+        <item>#3F51B5</item> <!-- Indigo 500 -->
+        <item>#FF5722</item> <!-- Deep Orange 500 -->
+        <item>#4CAF50</item> <!-- Green 500 -->
+        <item>#FFC107</item> <!-- Amber 500 -->
+        <item>#9C27B0</item> <!-- Purple 500 -->
+        <item>#00BCD4</item> <!-- Cyan 500 -->
+        <item>#FF9800</item> <!-- Orange 500 -->
+        <item>#E91E63</item> <!-- Pink 500 -->
+        <item>#2196F3</item> <!-- Blue 500 -->
+        <item>#5C3C63</item>  <!-- Dark color -->
+        <item>#704A7A</item>  <!-- Blend 1 -->
+        <item>#8B5A8F</item>  <!-- Blend 2 -->
+        <item>#A46C9D</item>  <!-- Blend 3 -->
+        <item>#BF80AC</item>  <!-- Blend 4 -->
+        <item>#D594BB</item>  <!-- Blend 5 -->
+        <item>#EBA4CB</item>  <!-- Blend 6 -->
+        <item>#FFB2D5</item>  <!-- Blend 7 -->
+        <item>#FFB2D5</item>  <!-- Blend 8 -->
+        <item>#FF4081</item>  <!-- Light color -->
+    </string-array>
+</resources>

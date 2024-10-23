@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PrivioBrowser" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary_P40</item>
+        <item name="colorPrimaryVariant">@color/primary_P40</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+
+        <item name="colorOnSecondary">@color/black</item>
+         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Theme.PrivioBrowser" parent="Base.Theme.PrivioBrowser" />
+
+    <style name="BottomNavigationStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="android:background">@color/primary_P40</item>
+        <item name="itemIconTint">@color/secondary_container_S90</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="itemRippleColor">@color/tertiaryT40</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/daiouge_bg"
+        android:maxHeight="650dp"
+        android:minWidth="350dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            android:src="@drawable/cancel_round_4px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato900"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            android:text="Save New Page"
+            android:textColor="@color/dailouge_heading_txt_color"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/iv_cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_sub_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato400"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            android:text="Add details to save new page on you home"
+            android:textColor="@color/dailouge_subheading_txt_color"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_heading" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/dailouge_input_box_hint_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sub_heading">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_et"
+                android:layout_width="match_parent"
+                android:textColor="@color/dailouge_input_box_text_color"
+                android:fontFamily="@font/lato400"
+                android:layout_height="wrap_content"
+                android:hint="Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_url"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColorHint="@color/dailouge_input_box_hint_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tl_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/url_et"
+                android:layout_width="match_parent"
+                android:textColor="@color/dailouge_input_box_text_color"
+                android:fontFamily="@font/lato400"
+                android:layout_height="wrap_content"
+                android:hint="Url" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/btn_skip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="25dp"
+            android:padding="9dp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tl_url"
+            app:nb_borderWidth="2dp"
+            app:nb_focusColor="@color/dailouge_neg_btn_txt_color"
+            app:nb_radius="7dp"
+            app:nb_text="Cancel"
+            app:nb_backgroundColor="@color/dailouge_neg_btn_bg_color"
+            app:nb_textColor="@color/primary_P40"
+            app:nb_textSize="14sp" />
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/btn_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="25dp"
+            android:padding="9dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_skip"
+            app:layout_constraintTop_toBottomOf="@+id/tl_url"
+            app:nb_backgroundColor="@color/dailouge_pos_btn_bg_color"
+            app:nb_borderWidth="2dp"
+            app:nb_focusColor="@color/white"
+            app:nb_radius="7dp"
+            app:nb_text="Add"
+            app:nb_textColor="@color/dailouge_pos_btn_txt_color"
+            app:nb_textSize="14sp" />
+
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/btn_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="9dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_add"
+            app:nb_backgroundColor="@color/dailouge_third_btn_bg_color"
+            app:nb_borderWidth="2dp"
+            app:nb_focusColor="@color/white"
+            app:nb_radius="7dp"
+            app:nb_text="Delete Page"
+            app:nb_textColor="@color/dailouge_pos_btn_txt_color"
+            app:nb_textSize="14sp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
