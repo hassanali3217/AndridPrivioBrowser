@@ -48,6 +48,7 @@ object AppModuleSingleton {
         return WeatherRepository()
     }
 
+
     @Provides
     @Singleton
     fun providePrivioSharedPref(@ApplicationContext context: Context): PrivioSharedPref {
